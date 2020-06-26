@@ -1,7 +1,5 @@
 # Embedded
-
-Lab 1 Blinking LED (Assembler)
-- Continuously blinking LED with period of 1 second.
-
-Using ATmega328.
+Embedded Systems coursework
+Programming of ATmega328 microcontroller using Arduino.
+Low-level programming using Assembly and C
 
