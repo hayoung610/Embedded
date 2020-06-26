@@ -1,4 +1,4 @@
-// LED blinks continuously using output compare interrupt
+// // LED blinks continuously using CTC mode(clear timer on compare match)
 // OC1A used, LED is connected to PB1 pin
 
 #include <avr/io.h>
