@@ -6,7 +6,7 @@
 .include "../m328Pdef.inc"
 .org 0x0000
   	RJMP begin		; jump to begin
-.org 0x0002          ;Initialize the stack pointer, Program address of INT0 interrupt
+.org 0x0002          		;Initialize the stack pointer, Program address of INT0 interrupt
 	RJMP intr		;Jump to interrupt
 
 .org 0x0034
