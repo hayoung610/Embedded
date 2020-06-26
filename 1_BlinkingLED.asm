@@ -1,3 +1,5 @@
+;Continuously blinking LED with period of 1 second.
+
 .include "m328def.inc" 
 .org 0x0000
            RJMP begin; jump to begin  
