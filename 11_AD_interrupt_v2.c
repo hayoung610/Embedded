@@ -1,3 +1,8 @@
+// Potentiometer, Three LEDs, switch used
+// Half of the potentiomenter used for decreasing brightness of LEDs, other half used for increasing brightness
+// When an interrupt happens, LEDs blink three times
+// Interrupt given by a switch
+
 #include <avr/io.h>
 // #define F_CPU 16000000UL //define CPU clock 16MHz
 #include <avr/interrupt.h>
@@ -41,13 +46,10 @@ ISR(ADC_vect)
     {
         int i =0;
         PORTD = 0b00100000;
-
-
         for(i=0; i<3 ; i++){
             _delay_ms(500);
             PORTD = PORTD << 1;
         }
-
     }
     else{ 
         int i =0;
