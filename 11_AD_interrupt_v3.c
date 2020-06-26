@@ -1,3 +1,8 @@
+// Potentiometer, Three LEDs, switch used
+// Half of the potentiomenter used for decreasing brightness of LEDs, other half used for increasing brightness
+// When an interrupt happens, LEDs blink three times
+// Interrupt given by a switch
+
 #include <avr/io.h>
 // #define F_CPU 16000000UL //define CPU clock 16MHz
 #include <avr/interrupt.h>
