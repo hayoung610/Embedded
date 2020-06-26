@@ -1,5 +1,6 @@
 // Change LED brightness using PWM waveform
 // The LED brightness changes with time
+// The brightness is controlled by how long the LED is on or off
 
 #include <avr/io.h>
 #define F_CPU 16000000UL    //Define CPU clock as 16Mhz
@@ -30,7 +31,7 @@ ISR(TIMER1_COMPA_vect)     //Fix on time and changed off time
     else{ \\When LED OFF
          n += 1;           //increase value of OCR1A every time
          n %= 5000;        //to change the off time and
-         OCR1A = n;         //set back to 0 when it reaches 5000
-         PORTD ^= 1<<7;     //toggle
+         OCR1A = n;        //set back to 0 when it reaches 5000
+         PORTD ^= 1<<7;    //toggle
     }
 }
